@@ -1,0 +1,16 @@
+/*Padronizando os componentes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.content_redes{
+    color: white;
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+}
