@@ -6,16 +6,23 @@
     font-family: 'Inter', sans-serif;
 }
 
-.content_redes{
-    color: white;
-    font-size: medium;
-    text-align: center;
-    justify-content: center;
+.content-redes{
+    color: white;    
     display: flex;
-    align-items: center;
 }
 
 .image{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+}
+
+.content-redes button{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+
+.content-image img{
+    width: 300px;
 }
