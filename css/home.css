@@ -6,6 +6,15 @@
     font-family: 'Inter', sans-serif;
 }
 
+body{
+    background-color: #ADACAC;    
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
 .content-redes{
     color: white;    
     display: flex;
