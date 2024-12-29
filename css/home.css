@@ -12,7 +12,12 @@ body{
 
 .content{
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.content-header{
+    display: flex;
 }
 
 .content-redes{
