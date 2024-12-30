@@ -76,5 +76,11 @@
 }
 
 .content-image img{
-    width: 300px;
+    position: absolute;
+  left: 939px;
+  top: -14px;
+  width: 401px;
+  height: 713px;
+  background: url(https://design.penpot.app/assets/by-file-media-id/7b8778b5-b939-80fe-8005-805819f9dfc7) no-repeat center center / cover;
+  border-radius: 0px;
 }
