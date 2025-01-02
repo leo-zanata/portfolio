@@ -52,28 +52,26 @@
   flex-direction: column;
 }
 
-.container-main a{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  width: 100%;
-  height: 40px;
-}
-
-.main-content{
+.main-container{
   display: inline-flex;
   margin-left: 1rem;
 }
 
-.main-content i{
+.main-content a{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 40px;
+  text-decoration: none;
+}
+
+.container-icon i{
   justify-content: center;
   align-content: center;
   width: 25px;
   color: #1e1e1e;
 }
 
-.bi bi-house{
-  
-}
 .main-content p{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
