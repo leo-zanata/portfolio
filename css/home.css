@@ -66,9 +66,10 @@
 }
 
 .container-icon i{
-  justify-content: center;
-  align-content: center;
-  width: 25px;
+  display: inline-flex;
+  width: 30px;
+  font-size: 20px;
+  margin-top: 15px;
   color: #1e1e1e;
 }
 
