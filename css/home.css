@@ -94,10 +94,41 @@
 
 .content-main{
   position: absolute;
-  left: 488px;
-  top: 217px;
+  left: 450px;
+  top: 100px;
   width: 449px;
-  height: 130px;
+}
+
+
+.content-header h1{
+  color: #000000;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.content-header p{
+  color: #FFFFFF;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.content-text p{
+  color: #FFFFFF;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+  
 }
 
 .content-redes{
