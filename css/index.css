@@ -46,7 +46,7 @@ main{
   left: 78px;
   top: 75px;
   width: 250px;
-  height: 290px;
+  height: 340px;
   background: #dbdbdb;
   border-radius: 0px;
 }
@@ -61,7 +61,6 @@ main{
   display: inline-flex;
   margin-left: 1rem;
 }
-
 
 .main-content{
   width: 100%;
@@ -88,14 +87,15 @@ main{
 }
 
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     color: var(--cor-bg);
     bottom: 0;
 }
   
 #footer_copyright {
-    display: flex;
-    justify-content: center;
     background-color: var(--cor-secundaria);
     font-size: 0.9rem;
     padding: 1rem;

@@ -76,8 +76,8 @@
 
 .content-image img{
   position: relative;
-  left: 693.7px;
-  top: -50px;
+  left: 470px;
+  top: -70px;
   width: 411px;
   height: 651px;
   border-radius: 0px;
@@ -88,7 +88,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  left: -210px;
+  left: -10px;
   top: 250px;
 }
 
