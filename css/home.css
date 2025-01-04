@@ -174,17 +174,35 @@
 }
 
 .content-link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   left: 450px;
   top: 500px;
 }
 
-.content-link a{
+.content-link p{
   text-decoration: none;
   color: #FFFFFF;
   font-family: Abril Fatface;
   font-style: normal;
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 0;
+}
+
+.content-link a{
+  width: 20px;
+}
+
+.link-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-content i{
+  color: #FFFFFF;
+  font-size: 20px;
 }
