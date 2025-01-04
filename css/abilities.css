@@ -42,8 +42,8 @@
 }
 
 .tab-btn {
-    background: #4a90e2;
-    color: #fff;
+    background: #dbdbdb;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -52,11 +52,11 @@
 }
 
 .tab-btn:hover {
-    background: #357abd;
+    background: #ebeaea;
 }
 
 .tab-btn.active {
-    background: #2c5d99;
+    background: #ffffff;
 }
 
 /* Conteúdo das Abas */
