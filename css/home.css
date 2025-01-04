@@ -165,10 +165,16 @@
 }
 
 .content-image img{
-position: relative;
-left: 939px;
-top: -14px;
-width: 401px;
-height: 713px;
-border-radius: 0px;
+  position: relative;
+  left: 475.4px;
+  top: -50px;
+  width: 401px;
+  height: 713px;
+  border-radius: 0px;
+}
+
+.content-link{
+  position: absolute;
+  left: 450px;
+  top: 500px;
 }
