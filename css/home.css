@@ -66,6 +66,9 @@
   cursor: pointer;
   font-size: 0.93rem;
   color: #000000; 
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .image{
