@@ -52,11 +52,9 @@
   margin: 1.5rem 0 0 0;
 }
 
-.content-redes a{
+.content-redes a {
+  text-decoration: none;
   margin: 0 2rem 0 0;
-}
-
-.content-redes button{
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -73,14 +71,15 @@
 .image{
   width: 20px;
   height: 20px;
+  margin-right: 3px;
 }
 
 .content-image img{
   position: relative;
-  left: 700.4px;
+  left: 693.7px;
   top: -50px;
-  width: 401px;
-  height: 713px;
+  width: 411px;
+  height: 651px;
   border-radius: 0px;
 }
 
@@ -90,7 +89,7 @@
   align-items: center;
   position: relative;
   left: -210px;
-  top: 220px;
+  top: 250px;
 }
 
 .content-link p{
