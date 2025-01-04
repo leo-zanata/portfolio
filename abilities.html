@@ -23,44 +23,51 @@
       <div class="content">
         <div class="content-main">
           <div class="content-header">
-            <h1>Sobre Mim</h1>
+            <h1>Habilidades</h1>
           </div>
-          <div class="content-text">
-            <p>
-              Olá! Meu nome é <strong>Leonardo Zanata</strong> e sou estudante
-              de <strong>Gestão da Tecnologia da Informação</strong> na
-              <strong>Fatec Barueri</strong>. Estou focado em desenvolver
-              soluções tecnológicas inovadoras e funcionais.
-            </p>
-
-            <p>
-              Busco constantemente aprender mais sobre desenvolvimento web e
-              banco de dados.
-            </p>
-
-            <p>
-              Atualmente, estou trabalhando no projeto
-              <strong>Crowd Gym</strong>, um sistema completo para gerenciamento
-              de academias, incluindo matrícula de alunos e monitoramento de
-              fluxo de pessoas.
-            </p>
-
-            <p>
-              Além de tecnologia, sou apaixonado por praticar musculação, ouvir
-              música e caminhar ao ar livre.
-            </p>
+          <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('tecnologias')">
+              Tecnologias
+            </button>
+            <button class="tab-btn" onclick="showTab('ferramentas')">
+              Ferramentas
+            </button>
+            <button class="tab-btn" onclick="showTab('interpessoais')">
+              Interpessoais
+            </button>
           </div>
-        </div>
 
-        <div class="content-link">
-          <p>
-            Para mais detalhes sobre minha trajetória e experiência
-            profissional, você pode baixar meu currículo.
-          </p>
-          <a href="download/CV Leonardo Zanata.pdf" download
-            ><div class="link-content">
-              <i class="bi bi-download"></i></div
-          ></a>
+          <div class="tab-content active" id="tecnologias">
+            <h3>Tecnologias</h3>
+            <ul>
+              <li>PHP</li>
+              <li>SQL</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="ferramentas">
+            <h3>Ferramentas</h3>
+            <ul>
+              <li>Visual Studio Code</li>
+              <li>Git & GitHub</li>
+              <li>MySQL</li>
+              <li>phpMyAdmin</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="interpessoais">
+            <h3>Interpessoais</h3>
+            <ul>
+              <li>Comunicação eficaz</li>
+              <li>Trabalho em equipe</li>
+              <li>Organização</li>
+              <li>Resolução de problemas</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="content-image">
