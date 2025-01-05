@@ -72,6 +72,22 @@
     display: block;
 }
 
+.tab-content.active img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.tab-content.active li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tab-content.active li:hover{
+    background: #dbdbdb;
+}
+
 /* Animação FadeIn */
 @keyframes fadeIn {
     from {
@@ -93,7 +109,7 @@
 .tab-content ul li {
     margin: 5px 0;
     padding: 5px 10px;
-    background: #eef;
+    background: #ffffff;
     border-radius: 4px;
     font-size: 0.95em;
 }
