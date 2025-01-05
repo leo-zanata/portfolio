@@ -1,0 +1,68 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .content-main{
+    margin-left: 10px;
+    margin-top: 70px;
+    width: 480px;
+  }
+   
+  .content-header h1{
+    color: #000000;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 0;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: none;
+    margin-bottom: 2.5rem;
+  }
+  
+  .content-header p{
+    color: #FFFFFF;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  
+  .content-text{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-text p{
+    color: #FFFFFF;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 0 5px 0;
+  }
+  
+  .content-text strong{
+    color: #000000;
+  }
+  
+  .image{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+  }
+  
+  .content-image img{
+    position: absolute;
+    left: 1000px;
+    top: 30px;
+    width: 320px;
+    height: 440px;
+    border-radius: 0px;
+  }
+  
