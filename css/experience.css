@@ -1,0 +1,125 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .content-main{
+    margin-left: 150px;
+    margin-top: 70px;
+    width: 600px;
+  }
+   
+  .content-header h1{
+    color: #000000;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 0;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: none;
+    margin-bottom: 3rem;
+  }
+  .content-text p{
+    color: #FFFFFF;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .content-experiences{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo Geral da Seção */
+#experiencias {
+    background-color: #f1f5f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#experiencias h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#experiencias p {
+    margin-bottom: 30px;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Abas */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: #dbdbdb;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.tab-button:hover {
+    background: #ebeaea;
+}
+
+.tab-button.active {
+    background: #ffffff;
+}
+
+/* Conteúdo das Abas */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilo das Experiências */
+.experiencia {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.experiencia h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.experiencia h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.experiencia p {
+    font-size: 0.95em;
+    margin: 5px 0;
+}
+
+.experiencia strong {
+    color: #333;
+}

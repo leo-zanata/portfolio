@@ -9,7 +9,7 @@
     />
     <title>Portfólio - Experiências</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/experience.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -26,9 +26,60 @@
             <h1>Minhas Experiências</h1>
           </div>
           <div class="content-text">
-            <p>
-             
-            </p>
+            <p>Explore meus projetos práticos e minha trajetória acadêmica.</p>
+          </div>
+          <!-- Abas -->
+          <div class="tabs">
+            <button class="tab-button active" onclick="openTab('projetos')">
+              Projetos
+            </button>
+            <button class="tab-button" onclick="openTab('academica')">
+              Acadêmicas
+            </button>
+          </div>
+          <div class="content-experiences">
+            <div id="projetos" class="tab-content active">
+              <div class="experiencia">
+                <h3>Crowd Gym</h3>
+                <h4>Desenvolvedor Full Stack</h4>
+                <p><strong>Período:</strong> Jan 2024 - Atual</p>
+                <p>
+                  Sistema de gerenciamento de academias com funcionalidades para
+                  monitoramento de fluxo de alunos, controle financeiro e
+                  gerenciamento de planos.
+                </p>
+              </div>
+
+              <div class="experiencia">
+                <h3>CW Cursos</h3>
+                <h4>Desenvolvedor Web</h4>
+                <p><strong>Período:</strong> Ago 2024 - Atual</p>
+                <p>
+                  Plataforma de cursos online focada em Marketing Digital, com
+                  acessibilidade para pessoas com deficiência auditiva.
+                </p>
+              </div>
+            </div>
+
+            <div id="academica" class="tab-content">
+              <div class="experiencia">
+                <h3>Fatec Barueri</h3>
+                <h4>Tecnólogo em Gestão da Tecnologia da Informação</h4>
+                <p><strong>Período:</strong> Jan 2023 - Dez 2025</p>
+                <p>
+                  O curso de Gestão da Tecnologia da Informação forma profissionais para administrar recursos de TI em empresas, gerenciando infraestrutura, sistemas e equipes.
+                </p>
+              </div>
+
+              <div class="experiencia">
+                <h3>OneBitCode</h3>
+                <h4>Full Stack Javascript</h4>
+                <p><strong>Período:</strong> jan 2024 - Atual</p>
+                <p>
+                  O curso de Full Stack JavaScript abrange desde os conceitos iniciais até os mais avançados da linguagem e seu ecossistema, proporcionando ao aluno um conhecimento completo tanto no desenvolvimento de frontend quanto de backend ao final do curso.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -39,5 +90,6 @@
         &copy; 2024-2025 PORTFÓLIO DE LEONARDO ZANATA
       </div>
     </footer>
+    <script src="js/funcoes/experience.js"></script>
   </body>
 </html>
