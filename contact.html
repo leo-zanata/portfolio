@@ -94,25 +94,46 @@
               ></textarea>
 
               <button type="submit">Enviar</button>
+              <span
+                id="status-message"
+                style="display: none; margin-left: 10px"
+              ></span>
             </form>
           </div>
         </div>
       </div>
     </main>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="email.js"></script>
+    <script src="js/funcoes/email.js"></script>
     <script>
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (event) {
           event.preventDefault();
+
+          const button = this.querySelector("button[type='submit']");
+          const statusMessage = document.getElementById("status-message");
+
+          // Alterar o estado do botão e mostrar mensagem de carregamento
+          button.disabled = true;
+          button.textContent = "Enviando...";
+          statusMessage.style.display = "inline";
+          statusMessage.textContent = "Por favor, aguarde...";
+
           enviarEmail(this)
             .then((message) => {
               alert(message);
               this.reset(); // Limpar o formulário após o envio
+              statusMessage.style.display = "none";
             })
             .catch((err) => {
               alert(err.message);
+              statusMessage.style.display = "none";
+            })
+            .finally(() => {
+              // Restaurar o botão ao estado original
+              button.disabled = false;
+              button.textContent = "Enviar";
             });
         });
     </script>

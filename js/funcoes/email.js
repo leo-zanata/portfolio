@@ -5,7 +5,7 @@
   // Função para enviar e-mail
   function enviarEmail(formulario) {
     const serviceID = "service_93kditf"; // Service ID
-    const templateID = "SEU_TEMPLATE_ID"; // Template ID
+    const templateID = "template_bu02as5"; // Template ID
   
     return emailjs.sendForm(serviceID, templateID, formulario)
       .then(() => {
