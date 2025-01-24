@@ -119,6 +119,20 @@
 }
 
 @media (max-width: 1920px) {
+  
+  .content-main{
+    margin-left: 10rem;
+    margin-top: 5rem;
+    width: 1000px;
+  }
 
+  .content-image img{
+    position: absolute;
+    left: 80rem;
+    top: -5rem;
+    width: 631px;
+    height: 971px;
+    border-radius: 0px;
+  }
 
 }
