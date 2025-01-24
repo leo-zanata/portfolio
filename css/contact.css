@@ -101,15 +101,6 @@
   margin-right: 3px;
 }
 
-.content-image img{
-  position: relative;
-  left: 470px;
-  top: -70px;
-  width: 411px;
-  height: 651px;
-  border-radius: 0px;
-}
-
 #contact-form{
   display: flex;
   flex-direction: column;
