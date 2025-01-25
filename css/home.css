@@ -118,10 +118,43 @@
   font-size: 20px;
 }
 
-@media (min-width: 1920px) {
-  
+@media (min-width: 1920px) { 
   .content-main{
+    margin-left: 20rem;
+    margin-top: 7rem;
     width: 1000px;
+  }
+
+  .content-header h1{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 0;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: none;
+  }
+  
+  .content-header p{
+    font-size: 40px;
+  }
+  
+  .content-text p{
+    font-size: 27px;
+  }
+  
+  .content-redes{    
+    margin: 2.5rem 0 0 0;
+  }
+  
+  .content-redes a {
+    padding: 0.9rem;
+    font-size: 1.93rem;
+  }
+  
+  .image{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
   }
 
   .content-image img{   
@@ -131,4 +164,20 @@
     height: 971px;
   }
 
+  .content-link{
+    margin-left: -25rem;
+    margin-top: 21rem;
+  }
+  
+  .content-link p{
+    font-size: 30px;
+  }
+  
+  .content-link a{
+    width: 30px;
+  }
+  
+  .link-content i{
+    font-size: 30px;
+  }
 }
