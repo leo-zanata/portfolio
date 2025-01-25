@@ -311,9 +311,9 @@
   
   .content-image img{
     left: 57rem;
-    top: -5rem;
+    top: 0rem;
     width: 431px;
-    height: 671px;
+    height: 571px;
   }
   
   .content-link{
@@ -361,7 +361,7 @@
   }
 }
 
-@media (max-width: 870px){
+@media (max-width: 1000px){
   .content-main{
     margin-left: 10rem;
     width: 600px;
@@ -391,9 +391,9 @@
   }
 
   .content-image img{
-    left: 15rem;
-    top: 20rem;
-    width: 431px;
+    left: 13rem;
+    top: 25rem;
+    width: 451px;
     height: 671px;
   }
 
