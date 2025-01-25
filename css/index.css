@@ -103,7 +103,7 @@ footer {
     font-weight: 100;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1920px) {
   .container{
     left: 78px;
     top: 75px;
@@ -127,10 +127,62 @@ footer {
     width: 70px;
     font-size: 40px;
     margin-top: 10px;
-    color: #1e1e1e;
   }
     
   #footer_copyright {
       font-size: 1.1rem;
   }
+}
+
+@media screen and (max-width: 1750px) {
+  .container{
+    left: 78px;
+    top: 75px;
+    width: 420px;
+    height: 640px;
+  }
+
+  .main-container{
+    margin-left: 2rem;
+  }
+
+  .main-content a{
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    height: 40px;
+    font-size: 45px;
+  }
+  
+  .main-content i{
+    width: 70px;
+    font-size: 40px;
+    margin-top: 10px;
+  }
+    
+  #footer_copyright {
+      font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 1665px){
+  .container{
+    left: 78px;
+    top: 75px;
+    width: 350px;
+    height: 540px;
+  }
+
+  
+  .main-content a{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 35px;
+  }
+  
+  .main-content i{
+    width: 60px;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  
 }

@@ -118,7 +118,7 @@
   font-size: 20px;
 }
 
-@media (min-width: 1920px) { 
+@media (max-width: 1920px) { 
   .content-main{
     margin-left: 20rem;
     margin-top: 7rem;
@@ -127,11 +127,6 @@
 
   .content-header h1{
     font-size: 70px;
-    font-weight: 400;
-    line-height: 0;
-    letter-spacing: 0px;
-    text-decoration: none;
-    text-transform: none;
   }
   
   .content-header p{
@@ -179,5 +174,65 @@
   
   .link-content i{
     font-size: 30px;
+  }
+}
+
+@media (max-width: 1750px){
+  .content-image img{   
+    left: 73rem;
+    width: 601px;
+    height: 941px;
+  }
+}
+
+@media (max-width: 1665px){
+  .content-header h1{
+    font-size: 60px;
+  }
+  
+  .content-header p{
+    font-size: 30px;
+  }
+  
+  .content-text p{
+    font-size: 25px;
+  }
+  
+  .content-redes{    
+    margin: 1.5rem 0 0 0;
+  }
+  
+  .content-redes a {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .image{
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+  }
+
+  .content-image img{   
+    left: 72rem;
+    width: 501px;
+    height: 841px;
+  }
+
+  .content-link{
+    margin-left: -23rem;
+    margin-top: 20rem;
+  }
+  
+  .content-link p{
+    font-size: 27px;
+  }
+  
+  .content-link a{
+    width: 27px;
+  }
+  
+  .link-content i{
+    font-size: 27px;
   }
 }
