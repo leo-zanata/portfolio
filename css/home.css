@@ -363,6 +363,62 @@
 
 @media (max-width: 870px){
   .content-main{
-    margin-left: 35rem;
+    margin-left: 10rem;
+    width: 600px;
+  } 
+
+  .content-header h1{
+    font-size: 50px;
+  }
+  
+  .content-header p{
+    font-size: 30px;
+  }
+  
+  .content-text p{
+    font-size: 22px;
+  }
+  
+  .content-redes a {
+    margin: 0 3rem 0 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  
+  .image{
+    width: 25px;
+    height: 25px;
+  }
+
+  .content-image img{
+    left: 15rem;
+    top: 20rem;
+    width: 431px;
+    height: 671px;
+  }
+
+  .content-link{
+    margin-left: -10rem;
+    margin-top: 45rem;
+  }
+}
+
+@media (max-width: 790px){
+  .content-main{
+    margin-left: 20rem;
+  }
+
+  .content-image img{
+    left: 35rem;
+  }
+}
+
+@media (max-width: 670px){
+  .content-main{
+    margin-left: 20rem;
+  }
+
+  .content-image img{
+    left: 35rem;
   }
 }
