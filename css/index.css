@@ -103,6 +103,31 @@ footer {
     font-weight: 100;
 }
 
-@media (max-width: 1366px) {
+@media screen and (min-width: 1920px) {
+  .container{
+    left: 78px;
+    top: 75px;
+    width: 450px;
+    height: 640px;
+  }
 
+  .main-container{
+    margin-left: 2rem;
+  }
+
+  .main-content a{
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    height: 40px;
+    font-size: 45px;
+    font-weight: 400px;
+  }
+  
+  .main-content i{
+    width: 70px;
+    font-size: 40px;
+    margin-top: 10px;
+    color: #1e1e1e;
+  }
+  
 }
