@@ -393,7 +393,7 @@
   }
 }
 
-@media (max-width: 550px){
+@media (max-width: 570px){
   .content-header h1{
     margin-left: 2rem;
     margin-top: 12rem;
@@ -499,33 +499,57 @@
   }
 }
 
-@media (max-width: 370px){
+@media (max-width: 420px){
   .content-header h1{
-    font-size: 40px;
+    margin-left: 1rem;
   }
   
   .content-header p{
-    font-size: 25px;
+    margin-left: 1rem;
   }
   
+  .content-text p{
+    margin-left: 1rem;
+  }
+
   .content-image img{
-    left: 1rem;
-    top: 31rem;
+    left: 0rem;
+    top: 32rem;
     width: 401px;
-    height: 591px;
+    height: 571px;
+  }
+
+  .content-redes{
+    margin-left: 1rem;
   }
 
   .content-redes a {
-    margin: 0 1.5rem 0 0;
+    margin: 0 1rem 0 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px){ 
+  .content-image img{
+    left: 3rem;
+    top: 32rem;
+    width: 300px;
+    height: 400px;
+  }
+
+  .content-redes a {
+    margin: 0 0.5rem 0 0;
     font-size: 1rem;
   }
 
   .content-link{
-    margin-top: 41rem;
+    margin-left: 1rem;
+    margin-top: 30rem;
   }
 }
 
-@media (max-width: 331px){
+
+@media (max-width: 380px){ 
   .content-header h1{
     font-size: 35px;
   }
@@ -534,19 +558,73 @@
     font-size: 25px;
   }
   
+  .content-text p{
+    margin-left: 1rem;
+    line-height: 1;
+    font-size: 18px;
+  }
+
   .content-image img{
-    left: 1rem;
-    top: 31rem;
-    width: 401px;
-    height: 591px;
+    left: 2rem;
+    top: 32rem;
+    width: 300px;
+    height: 400px;
   }
 
   .content-redes a {
-    margin: 0 1.5rem 0 0;
-    font-size: 1rem;
+    margin: 0 0.5rem 0 0;
+    font-size: 0.9rem;
   }
 
   .content-link{
-    margin-top: 41rem;
+    margin-left: 1rem;
+    margin-top: 30rem;
+  }
+}
+
+@media (max-width: 380px){ 
+  .content-image img{
+    left: 1rem;
+    top: 32rem;
+    width: 300px;
+    height: 400px;
+  }
+
+  .content-redes a {
+    margin: 0 0.5rem 0 0;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 330px){ 
+  .content-header h1{
+    margin-left: 0rem;
+  }
+  
+  .content-header p{
+    margin-left: 0rem;
+  }
+  
+  .content-text p{
+    margin-left: 0rem;
+  }
+
+  .content-image img{
+    left: 0rem;
+    top: 32rem;
+    width: 300px;
+    height: 400px;
+  }
+
+  .content-redes{
+    margin-left: 0rem;
+  }
+
+  .content-redes a {
+    margin: 0 0.4rem 0 0;
+    font-size: 0.7rem;
+  }
+  .content-link{
+    margin-left: 0rem;
   }
 }
