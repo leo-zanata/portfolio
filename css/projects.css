@@ -435,3 +435,9 @@
     margin-left: 0rem;
   }
 }
+
+@media (max-width: 305px) {
+  .content-header h1{
+    font-size: 35px;
+  }
+}
