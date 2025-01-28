@@ -39,87 +39,276 @@
   }
   
   /* Estilo Geral da Seção */
-#experiencias {
-    background-color: #f1f5f9;
-    padding: 50px 20px;
-    text-align: center;
-}
+    #experiencias {
+        background-color: #f1f5f9;
+        padding: 50px 20px;
+        text-align: center;
+    }
 
-#experiencias h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
+    #experiencias h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
 
-#experiencias p {
-    margin-bottom: 30px;
-    font-size: 1em;
-    color: #666;
-}
+    #experiencias p {
+        margin-bottom: 30px;
+        font-size: 1em;
+        color: #666;
+    }
 
-/* Abas */
-.tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+    /* Abas */
+    .tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 
-.tab-button {
-    background: #dbdbdb;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background 0.3s;
-}
+    .tab-button {
+        background: #dbdbdb;
+        color: #000000;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: background 0.3s;
+    }
 
-.tab-button:hover {
-    background: #ebeaea;
-}
+    .tab-button:hover {
+        background: #ebeaea;
+    }
 
-.tab-button.active {
-    background: #ffffff;
-}
+    .tab-button.active {
+        background: #ffffff;
+    }
 
-/* Conteúdo das Abas */
-.tab-content {
-    display: none;
-}
+    /* Conteúdo das Abas */
+    .tab-content {
+        display: none;
+    }
 
-.tab-content.active {
-    display: block;
-}
+    .tab-content.active {
+        display: block;
+    }
 
-/* Estilo das Experiências */
-.experiencia {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    text-align: left;
-}
+    /* Estilo das Experiências */
+    .experiencia {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 600px;
+        text-align: left;
+    }
 
-.experiencia h3 {
-    font-size: 1.4em;
-    margin-bottom: 5px;
-    color: #000000;
-}
+    .experiencia h3 {
+        font-size: 1.4em;
+        margin-bottom: 5px;
+        color: #000000;
+    }
 
-.experiencia h4 {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #555;
-}
+    .experiencia h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+        color: #555;
+    }
 
-.experiencia p {
-    font-size: 0.95em;
-    margin: 5px 0;
-}
+    .experiencia p {
+        font-size: 0.95em;
+        margin: 5px 0;
+    }
 
-.experiencia strong {
-    color: #333;
-}
+    .experiencia strong {
+        color: #333;
+    }
+
+@media (max-width: 1920px) {
+  
+    .content-main{
+        margin-left: 25rem;
+        margin-top: 70px;
+        width: 900px;
+      }
+
+    .content-header h1{
+        font-size: 60px;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .content-text p{
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+    .tab-button {
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        font-size: 1.5em;
+    }
+
+    .experiencia {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 900px;
+        text-align: left;
+    }
+
+    .experiencia h3 {
+        font-size: 2em;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .experiencia h4 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .experiencia p {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+  }
+
+  @media (max-width: 1366px) {
+  
+    .content-main{
+        margin-left: 25rem;
+        margin-top: 70px;
+        width: 800px;
+      }
+
+    .content-header h1{
+        font-size: 40px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .content-text p{
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+    .tab-button {
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .experiencia {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 800px;
+        text-align: left;
+    }
+
+    .experiencia h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .experiencia h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .experiencia p {
+        font-size: 0.98em;
+        margin: 5px 0;
+    }
+  }
+
+  @media (max-width: 1205px) {
+    .content-main{
+        width: 700px;
+      }
+
+    .experiencia {
+        max-width: 700px;
+    }
+  }
+
+  @media (max-width: 1120px) {
+    .content-main{
+        margin-left: 10rem;
+      }
+  }
+
+  @media (max-width: 900px) {
+    .content-main{
+        margin-top: 10rem;
+        margin-left: 5rem;
+      }
+  }
+
+  @media (max-width: 800px) {
+    .content-main{
+        width: 600px;
+        margin-left: 1rem;
+    }
+
+    .experiencia {
+        max-width: 600px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .content-main{
+        width: 500px;
+    }
+
+    .experiencia {
+        max-width: 500px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .content-main{
+        width: 400px;
+    }
+
+    .experiencia {
+        max-width: 400px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .content-main{
+        margin-top: 7rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .content-main{
+        width: 300px;
+    }
+
+    .content-header h1{
+        font-size: 30px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .content-text p{
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .experiencia {
+        max-width: 300px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .content-main{
+        margin-left: 0rem;
+    }
+  }
