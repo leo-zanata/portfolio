@@ -364,8 +364,8 @@
     
     #contact-form textarea {
       width: 300px;  
-      height: 70px; 
-      min-height: 100px;
+      height: 100px; 
+      min-height: 70px;
       max-height: 300px;
       font-size: 1rem;
     }
