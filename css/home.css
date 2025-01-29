@@ -86,9 +86,6 @@
 .content-link{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-left: -15rem;
-  margin-top: 16rem;
 }
 
 .content-link p{
@@ -105,15 +102,71 @@
   width: 20px;
 }
 
-.link-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .link-content i{
   color: #FFFFFF;
   font-size: 20px;
+}
+
+@media (max-width: 2560px) { 
+  .content-header h1{
+    margin-left: 42rem;
+    margin-top: 8rem;
+    font-size: 80px;
+  }
+  
+  .content-header p{
+    margin-left: 42rem;
+    font-size: 50px;
+  }
+  
+  .content-text p{
+    margin-left: 42rem;
+    font-size: 40px;
+  }
+  
+  .content-redes{    
+    margin-left: 42rem;
+  }
+  
+  .content-link{
+    margin-left: 42rem;
+    margin-top: 21rem;
+  }
+
+  .content-redes a {  
+    margin: 0 3.5rem 0 0;
+    padding: 0.9rem;
+    font-size: 2rem;
+  }
+  
+  .image{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+
+  .content-image img{   
+    left: 105rem;
+    top: 2rem;
+    width: 801px;
+    height: 1031px;
+  }
+  
+  .content-link p{
+    font-size: 40px;
+  }
+  
+  .content-link a{
+    width: 30px;
+  }
+  
+  .link-content{
+    margin-left: 25rem;
+  }
+
+  .link-content i{
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 1920px) { 
@@ -136,6 +189,11 @@
   .content-redes{    
     margin-left: 36rem;
   }
+
+  .content-link{
+    margin-left: 36rem;
+    margin-top: 21rem;
+  }
   
   .content-redes a {  
     margin: 0 3.5rem 0 0;
@@ -155,11 +213,6 @@
     width: 601px;
     height: 831px;
   }
-
-  .content-link{
-    margin-left: -7rem;
-    margin-top: 21rem;
-  }
   
   .content-link p{
     font-size: 30px;
@@ -169,6 +222,10 @@
     width: 30px;
   }
   
+  .link-content{
+    margin-left: 20rem;
+  }
+
   .link-content i{
     font-size: 30px;
   }
@@ -196,6 +253,11 @@
   .content-redes{    
     margin-left: 25rem; 
   }
+
+  .content-link{
+    margin-left: 25rem;
+    margin-top: 14rem;
+  }
   
   .content-redes a {
     margin: 0 2rem 0 0;
@@ -216,17 +278,16 @@
     height: 571px;
   }
   
-  .content-link{
-    margin-left: -7rem;
-    margin-top: 14rem;
-  }
-  
   .content-link p{
     font-size: 20px;
   }
   
   .content-link a{
     width: 20px;
+  }
+
+  .link-content{
+    margin-left: 14rem;
   }
   
   .link-content i{
@@ -270,7 +331,6 @@
   }
 
   .content-link{
-    margin-left: 0rem;
     margin-top: 45rem;
   }
 }
@@ -293,6 +353,10 @@
     margin-left: 20rem;
   }
 
+  .content-link{
+    margin-left: 20rem;
+  }
+
   .content-image img{
     left: 18rem;
     top: 23rem;
@@ -309,6 +373,10 @@
   }
   
   .content-text p{
+    margin-left: 15rem;
+  }
+
+  .content-link{
     margin-left: 15rem;
   }
   
@@ -338,6 +406,10 @@
     left: 12rem;
   }
 
+  .content-link{
+    margin-left: 12rem;
+  }
+
   .content-redes{
     margin-left: 12rem;
   }
@@ -358,6 +430,10 @@
     line-height: 1;
   }
   
+  .content-link{
+    margin-left: 9rem;
+  }
+
   .content-image img{
     left: 9rem;
     top: 31rem;
@@ -381,6 +457,10 @@
   .content-text p{
     margin-left: 5rem;
     line-height: 1;
+  }
+
+  .content-link{
+    margin-left: 5rem;
   }
   
   .content-image img{
@@ -406,6 +486,10 @@
   .content-text p{
     margin-left: 2rem;
     line-height: 1;
+  }
+
+  .content-link{
+    margin-left: 2rem;
   }
   
   .content-image img{
@@ -438,6 +522,10 @@
     line-height: 1;
   }
   
+  .content-link{
+    margin-left: 1rem;
+  }
+
   .content-image img{
     left: 1rem;
     top: 32rem;
