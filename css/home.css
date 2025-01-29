@@ -107,6 +107,68 @@
   font-size: 20px;
 }
 
+@media (max-width: 7680px) { 
+  .content-header h1{
+    margin-left: 140rem;
+    margin-top: 40rem;
+    font-size: 250px;
+  }
+  
+  .content-header p{
+    margin-left: 140rem;
+    font-size: 140px;
+  }
+  
+  .content-text p{
+    margin-left: 140rem;
+    font-size: 120px;
+  }
+  
+  .content-redes{    
+    margin-left: 140rem;
+  }
+  
+  .content-link{
+    margin-left: 140rem;
+    margin-top: 55rem;
+  }
+
+  .content-redes a {  
+    margin: 10rem 15rem 0 0;
+    padding: 3rem;
+    font-size: 6rem;
+  }
+  
+  .image{
+    width: 120px;
+    height: 120px;
+    margin-right: 5px;
+  }
+
+  .content-image img{   
+    left: 340rem;
+    top: 20rem;
+    width: 2101px;
+    height: 2731px;
+  }
+  
+  .content-link p{
+    font-size: 120px;
+  }
+  
+  .content-link a{
+    width: 30px;
+  }
+  
+  .link-content{
+    margin-left: 80rem;
+  }
+
+  .link-content i{
+    font-size: 120px;
+  }
+}
+
 @media (max-width: 3840px) { 
   .content-header h1{
     margin-left: 60rem;
@@ -130,18 +192,18 @@
   
   .content-link{
     margin-left: 60rem;
-    margin-top: 33rem;
+    margin-top: 28rem;
   }
 
   .content-redes a {  
-    margin: 0 3.5rem 0 0;
-    padding: 0.9rem;
+    margin: 5rem 10rem 0 0;
+    padding: 1.5rem;
     font-size: 3rem;
   }
   
   .image{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-right: 5px;
   }
 
@@ -192,18 +254,18 @@
   
   .content-link{
     margin-left: 42rem;
-    margin-top: 28rem;
+    margin-top: 26rem;
   }
 
   .content-redes a {  
-    margin: 0 3.5rem 0 0;
+    margin: 2rem 5rem 0 0;
     padding: 0.9rem;
     font-size: 2rem;
   }
   
   .image{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin-right: 5px;
   }
 
