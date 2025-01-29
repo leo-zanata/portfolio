@@ -107,6 +107,68 @@
   font-size: 20px;
 }
 
+@media (max-width: 3840px) { 
+  .content-header h1{
+    margin-left: 60rem;
+    margin-top: 15rem;
+    font-size: 120px;
+  }
+  
+  .content-header p{
+    margin-left: 60rem;
+    font-size: 70px;
+  }
+  
+  .content-text p{
+    margin-left: 60rem;
+    font-size: 60px;
+  }
+  
+  .content-redes{    
+    margin-left: 60rem;
+  }
+  
+  .content-link{
+    margin-left: 60rem;
+    margin-top: 33rem;
+  }
+
+  .content-redes a {  
+    margin: 0 3.5rem 0 0;
+    padding: 0.9rem;
+    font-size: 3rem;
+  }
+  
+  .image{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+
+  .content-image img{   
+    left: 165rem;
+    top: 2rem;
+    width: 1101px;
+    height: 1431px;
+  }
+  
+  .content-link p{
+    font-size: 60px;
+  }
+  
+  .content-link a{
+    width: 30px;
+  }
+  
+  .link-content{
+    margin-left: 40rem;
+  }
+
+  .link-content i{
+    font-size: 60px;
+  }
+}
+
 @media (max-width: 2560px) { 
   .content-header h1{
     margin-left: 42rem;
@@ -130,7 +192,7 @@
   
   .content-link{
     margin-left: 42rem;
-    margin-top: 21rem;
+    margin-top: 28rem;
   }
 
   .content-redes a {  
@@ -524,6 +586,7 @@
   
   .content-link{
     margin-left: 1rem;
+    margin-top: 48rem;
   }
 
   .content-image img{
@@ -541,7 +604,7 @@
   }
 }
 
-@media (max-width: 475px){
+@media (max-width: 490px){
   .content-header h1{
     margin-left: 1rem;
     margin-top: 10rem;
@@ -577,13 +640,36 @@
     margin-left: 1rem;
     margin-top: 42rem;
   }
+
   .content-link p{
     line-height: 1;
+  }
+
+  .link-content{
+    margin-left: 13rem;
   }
 
   .link-content i{
     line-height: 0;
     font-size: 25px;
+  }
+}
+
+@media (max-width: 450px){
+  .content-redes a {
+    margin: 0 1rem 0 0;
+    font-size: 1.2rem;
+  }
+
+  .content-image img{
+    left: 1rem;
+    top: 32rem;
+    width: 401px;
+    height: 601px;
+  }
+
+  .link-content{
+    margin-left: 12rem;
   }
 }
 
@@ -615,6 +701,10 @@
     margin: 0 1rem 0 0;
     font-size: 1rem;
   }
+
+  .link-content{
+    margin-left: 11rem;
+  }
 }
 
 @media (max-width: 400px){ 
@@ -637,7 +727,7 @@
 }
 
 
-@media (max-width: 380px){ 
+@media (max-width: 390px){ 
   .content-header h1{
     font-size: 35px;
   }
@@ -667,6 +757,10 @@
   .content-link{
     margin-left: 1rem;
     margin-top: 30rem;
+  }
+
+  .link-content{
+    margin-left: 10rem;
   }
 }
 
@@ -712,7 +806,12 @@
     margin: 0 0.4rem 0 0;
     font-size: 0.7rem;
   }
+
   .content-link{
     margin-left: 0rem;
+  }
+
+  .link-content{
+    margin-left: 9rem;
   }
 }
