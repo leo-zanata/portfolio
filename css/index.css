@@ -150,6 +150,10 @@ footer {
   #footer_copyright {
       font-size: 4.5rem;
   }
+
+  #languageToggle{
+    font-size: 7rem;
+  }
 }
 
 @media screen and (max-width: 3840px) {
@@ -180,6 +184,10 @@ footer {
   #footer_copyright {
       font-size: 2rem;
   }
+
+  #languageToggle{
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 2560px) {
@@ -209,6 +217,10 @@ footer {
     
   #footer_copyright {
       font-size: 1.5rem;
+  }
+
+  #languageToggle{
+    font-size: 2rem;
   }
 }
 
@@ -242,6 +254,10 @@ footer {
   #footer_copyright {
       font-size: 1.1rem;
   }
+
+  #languageToggle{
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 1366px){
@@ -267,6 +283,10 @@ footer {
     width: 30px;
     font-size: 20px;
     margin-top: 7px;
+  }
+
+  #languageToggle{
+    font-size: 1rem;
   }
 }
 
@@ -308,6 +328,6 @@ footer {
 @media screen and (max-width: 500px){
   .container {
     left: 3rem;
-    top: 2rem;
+    top: 4rem;
   }
 }
