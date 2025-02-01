@@ -60,10 +60,11 @@
             Para mais detalhes sobre minha trajetória e experiência
             profissional, você pode baixar meu currículo.
           </p>
-          <a href="docs/CV Leonardo Zanata.pdf" target="_blank"
-            ><div class="link-content">
-              <i class="bi bi-download"></i></div
-          ></a>
+          <a id="cv-link" href="docs/CV Leonardo Zanata.pdf" target="_blank">
+            <div class="link-content">
+              <i class="bi bi-download"></i>
+            </div>
+          </a>
         </div>
       </div>
       <div class="content-image">
@@ -92,6 +93,7 @@
           aboutCv:
             "Para mais detalhes sobre minha trajetória e experiência profissional, você pode baixar meu currículo.",
           button: "us English",
+          cvLink: "docs/CV Leonardo Zanata.pdf", // Link do currículo em português
         },
         en: {
           aboutTitle: "About Me",
@@ -106,6 +108,7 @@
           aboutCv:
             "For more details about my career and professional experience, you can download my resume.",
           button: "🇧🇷 Português",
+          cvLink: "docs/EN - CV Leonardo Zanata.pdf",
         },
       };
 
@@ -126,6 +129,9 @@
           texts[currentLang].aboutCv;
         document.getElementById("languageToggle").textContent =
           texts[currentLang].button;
+
+        // Atualiza o link do currículo
+        document.getElementById("cv-link").href = texts[currentLang].cvLink;
       }
 
       document
