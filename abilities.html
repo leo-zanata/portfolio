@@ -20,20 +20,23 @@
       <div id="menu"></div>
       <script src="js/partials/menu.js"></script>
 
+      <!-- Botão de troca de idioma -->
+      <button id="languageToggle"></button>
+
       <div class="content">
         <div class="content-main">
           <div class="content-header">
-            <h1>Minhas Habilidades</h1>
+            <h1 id="skills-title">Minhas Habilidades</h1>
           </div>
           <div class="content-tabs">
             <div class="tabs">
-              <button class="tab-btn active" onclick="showTab('tecnologias')">
+              <button class="tab-btn active" onclick="showTab('tecnologias')" id="tab-tech">
                 Tecnologias
               </button>
-              <button class="tab-btn" onclick="showTab('ferramentas')">
+              <button class="tab-btn" onclick="showTab('ferramentas')" id="tab-tools">
                 Ferramentas
               </button>
-              <button class="tab-btn" onclick="showTab('interpessoais')">
+              <button class="tab-btn" onclick="showTab('interpessoais')" id="tab-soft">
                 Interpessoais
               </button>
             </div>
@@ -44,77 +47,97 @@
                 <li><img src="img/abilities/SQL.png" alt="" />SQL</li>
                 <li><img src="img/abilities/HMTL5.png" alt="" />HTML5</li>
                 <li><img src="img/abilities/CSS3.png" alt="" />CSS3</li>
-                <li>
-                  <img src="img/abilities/JavaScript.png" alt="" />JavaScript
-                </li>
-                <li>
-                  <img src="img/abilities/Use-case-UML.png" alt="" />Modelagem
-                  de Casos de Uso UML
-                </li>
+                <li><img src="img/abilities/JavaScript.png" alt="" />JavaScript</li>
+                <li><img src="img/abilities/Use-case-UML.png" alt="" id="uml" />Modelagem de Casos de Uso UML</li>
               </ul>
             </div>
 
             <div class="tab-content" id="ferramentas">
               <ul>
-                <li>
-                  <img src="img/abilities/pacote-office.webp" alt="" />Pacote Office
-                </li>
+                <li><img src="img/abilities/pacote-office.webp" alt="" />Pacote Office</li>
                 <li><img src="img/abilities/Git.png" alt="" />Git</li>
                 <li><img src="img/abilities/github.png" alt="" />GitHub</li>
                 <li><img src="img/abilities/Mysql.png" alt="" />MySQL</li>
-                <li>
-                  <img src="img/abilities/PhpMyAdmin.png" alt="" />phpMyAdmin
-                </li>
+                <li><img src="img/abilities/PhpMyAdmin.png" alt="" />phpMyAdmin</li>
                 <li><img src="img/abilities/figma.png" alt="" />Figma</li>
-                <li>
-                  <img src="img/abilities/VScode.png" alt="" />Visual Studio
-                  Code
-                </li>
+                <li><img src="img/abilities/VScode.png" alt="" />Visual Studio Code</li>
               </ul>
             </div>
 
             <div class="tab-content" id="interpessoais">
               <ul>
-                <li>
-                  <img
-                    src="img/abilities/communication.png"
-                    alt=""
-                  />Comunicação eficaz
-                </li>
-                <li>
-                  <img src="img/abilities/teamwork.png" alt="" />Trabalho em
-                  equipe
-                </li>
-                <li>
-                  <img src="img/abilities/leadership.png" alt="" />Liderança de equipe
-                </li>
-                <li>
-                  <img src="img/abilities/organization.png" alt="" />Organização
-                </li>
-                <li>
-                  <img
-                    src="img/abilities/problem-solving.webp"
-                    alt=""
-                  />Resolução de problemas
-                </li>
+                <li><img src="img/abilities/communication.png" alt="" id="com" />Comunicação eficaz</li>
+                <li><img src="img/abilities/teamwork.png" alt="" id="team" />Trabalho em equipe</li>
+                <li><img src="img/abilities/leadership.png" alt="" id="lead" />Liderança de equipe</li>
+                <li><img src="img/abilities/organization.png" alt="" id="org" />Organização</li>
+                <li><img src="img/abilities/problem-solving.webp" alt="" id="prob" />Resolução de problemas</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div class="content-image">
-        <img
-          src="img/portifolio imagem 4x3.png"
-          alt="Imagem de Leonardo Zanata"
-        />
+        <img src="img/portifolio imagem 4x3.png" alt="Imagem de Leonardo Zanata" />
       </div>
     </main>
 
-    <footer>
-      <div id="footer_copyright">
-        &copy; 2024-2025 PORTFÓLIO DE LEONARDO ZANATA
-      </div>
-    </footer>
     <script src="js/funcoes/abilities.js"></script>
+    <script src="js/partials/footer.js"></script>
+
+    <script>
+      const texts = {
+        pt: {
+          skillsTitle: "Minhas Habilidades",
+          tabTech: "Tecnologias",
+          tabTools: "Ferramentas",
+          tabSoft: "Interpessoais",
+          uml: "Modelagem de Casos de Uso UML",
+          com: "Comunicação eficaz",
+          team: "Trabalho em equipe",
+          lead: "Liderança de equipe",
+          org: "Organização",
+          prob: "Resolução de problemas",
+          button: "us English",
+        },
+        en: {
+          skillsTitle: "My Skills",
+          tabTech: "Technologies",
+          tabTools: "Tools",
+          tabSoft: "Interpersonal",
+          uml: "UML Use Case Modeling",
+          com: "Effective Communication",
+          team: "Teamwork",
+          lead: "Team Leadership",
+          org: "Organization",
+          prob: "Problem Solving",
+          button: "🇧🇷 Português",
+        },
+      };
+
+      let currentLang = localStorage.getItem("language") || "pt";
+
+      function translatePage() {
+        document.getElementById("skills-title").textContent = texts[currentLang].skillsTitle;
+        document.getElementById("tab-tech").textContent = texts[currentLang].tabTech;
+        document.getElementById("tab-tools").textContent = texts[currentLang].tabTools;
+        document.getElementById("tab-soft").textContent = texts[currentLang].tabSoft;
+        document.getElementById("uml").nextSibling.textContent = texts[currentLang].uml;
+        document.getElementById("com").nextSibling.textContent = texts[currentLang].com;
+        document.getElementById("team").nextSibling.textContent = texts[currentLang].team;
+        document.getElementById("lead").nextSibling.textContent = texts[currentLang].lead;
+        document.getElementById("org").nextSibling.textContent = texts[currentLang].org;
+        document.getElementById("prob").nextSibling.textContent = texts[currentLang].prob;
+        document.getElementById("languageToggle").textContent = texts[currentLang].button;
+      }
+
+      document.getElementById("languageToggle").addEventListener("click", function () {
+        currentLang = currentLang === "pt" ? "en" : "pt";
+        localStorage.setItem("language", currentLang);
+        translatePage();
+        renderMenu();
+      });
+
+      translatePage();
+    </script>
   </body>
 </html>

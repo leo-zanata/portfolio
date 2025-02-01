@@ -20,10 +20,13 @@
       <div id="menu"></div>
       <script src="js/partials/menu.js"></script>
 
+      <!-- Botão de troca de idioma -->
+      <button id="languageToggle"></button>
+
       <div class="content">
         <div class="content-main">
           <div class="content-header">
-            <h1>Meus Projetos</h1>
+            <h1 id="pageTitle">Meus Projetos</h1>
           </div>
 
           <!--Crowd Gym-->
@@ -33,7 +36,7 @@
                 <img src="img/projects/crowdgym/CG-gerente-inicio.png" alt="" />
                 <div class="project-main-content">
                   <div class="project-text">
-                    <p>
+                    <p id="crowdGymDesc">
                       Sistema de matrícula, assinatura de planos e monitoramento
                       de fluxo para academias e alunos.
                     </p>
@@ -68,7 +71,7 @@
                 <img src="img/projects/cwcursos/CW-tela-inicio.png" alt="" />
                 <div class="project-main-content">
                   <div class="project-text">
-                    <p>
+                    <p id="cwCursosDesc">
                       Uma plataforma de cursos online com o foco no Marketing Digital, inclusiva para as pessoas com deficiência auditiva.
                     </p>
                   </div>
@@ -103,7 +106,7 @@
                 <img src="img/projects/portfolio/portfolio-tela-inicio.png" alt="" />
                 <div class="project-main-content">
                   <div class="project-text">
-                    <p>
+                    <p id="portfolioDesc">
                     Venha conhecer meus projetos e um pouco sobre mim através deste portfólio.
                     </p>
                   </div>
@@ -134,10 +137,57 @@
       </div>
     </main>
 
-    <footer>
-      <div id="footer_copyright">
-        &copy; 2024-2025 PORTFÓLIO DE LEONARDO ZANATA
-      </div>
-    </footer>
+    <script src="js/partials/footer.js"></script>
+
+    <!-- Script para troca de idioma -->
+    <script>
+      const texts = {
+        pt: {
+          pageTitle: "Meus Projetos",
+          crowdGymDesc:
+            "Sistema de matrícula, assinatura de planos e monitoramento de fluxo para academias e alunos.",
+          cwCursosDesc:
+            "Uma plataforma de cursos online com o foco no Marketing Digital, inclusiva para as pessoas com deficiência auditiva.",
+          portfolioDesc:
+            "Venha conhecer meus projetos e um pouco sobre mim através deste portfólio.",
+          button: "us English",
+        },
+        en: {
+          pageTitle: "My Projects",
+          crowdGymDesc:
+            "A registration, subscription, and flow monitoring system for gyms and students.",
+          cwCursosDesc:
+            "An online course platform focused on Digital Marketing, inclusive for people with hearing disabilities.",
+          portfolioDesc:
+            "Come and explore my projects and a little about me through this portfolio.",
+          button: "🇧🇷 Português",
+        },
+      };
+
+      let currentLang = localStorage.getItem("language") || "pt"; // Usa o idioma salvo ou padrão
+
+      function translatePage() {
+        document.getElementById("pageTitle").textContent = texts[currentLang].pageTitle;
+        document.getElementById("crowdGymDesc").textContent =
+          texts[currentLang].crowdGymDesc;
+        document.getElementById("cwCursosDesc").textContent =
+          texts[currentLang].cwCursosDesc;
+        document.getElementById("portfolioDesc").textContent =
+          texts[currentLang].portfolioDesc;
+        document.getElementById("languageToggle").textContent =
+          texts[currentLang].button;
+      }
+
+      document
+        .getElementById("languageToggle")
+        .addEventListener("click", function () {
+          currentLang = currentLang === "pt" ? "en" : "pt";
+          localStorage.setItem("language", currentLang);
+          translatePage();
+          renderMenu(); // Chama a função do menu para atualizar
+        });
+
+      translatePage(); // Tradução ao carregar a página
+    </script>
   </body>
 </html>

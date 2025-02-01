@@ -20,32 +20,35 @@
       <div id="menu"></div>
       <script src="js/partials/menu.js"></script>
 
+      <!-- Botão de troca de idioma -->
+      <button id="languageToggle"></button>
+
       <div class="content">
         <div class="content-main">
           <div class="content-header">
-            <h1>Sobre Mim</h1>
+            <h1 id="about-title">Sobre Mim</h1>
           </div>
           <div class="content-text">
-            <p>
+            <p id="about-intro">
               Olá! Meu nome é <strong>Leonardo Zanata</strong> e sou estudante
               de <strong>Gestão da Tecnologia da Informação</strong> na
               <strong>Fatec Barueri</strong>. Estou focado em desenvolver
               soluções tecnológicas inovadoras e funcionais.
             </p>
 
-            <p>
+            <p id="about-learning">
               Busco constantemente aprender mais sobre desenvolvimento web e
               banco de dados.
             </p>
 
-            <p>
+            <p id="about-project">
               Atualmente, estou trabalhando no projeto
               <strong>Crowd Gym</strong>, um sistema completo para gerenciamento
               de academias, incluindo matrícula de alunos e monitoramento de
               fluxo de pessoas.
             </p>
 
-            <p>
+            <p id="about-hobbies">
               Além de tecnologia, sou apaixonado por praticar musculação, ouvir
               música e caminhar ao ar livre.
             </p>
@@ -53,7 +56,7 @@
         </div>
 
         <div class="content-link">
-          <p>
+          <p id="about-cv">
             Para mais detalhes sobre minha trajetória e experiência
             profissional, você pode baixar meu currículo.
           </p>
@@ -71,10 +74,71 @@
       </div>
     </main>
 
-    <footer>
-      <div id="footer_copyright">
-        &copy; 2024-2025 PORTFÓLIO DE LEONARDO ZANATA
-      </div>
-    </footer>
+    <script src="js/partials/footer.js"></script>
+
+    <!-- Script de tradução -->
+    <script>
+      const texts = {
+        pt: {
+          aboutTitle: "Sobre Mim",
+          aboutIntro:
+            "Olá! Meu nome é <strong>Leonardo Zanata</strong> e sou estudante de <strong>Gestão da Tecnologia da Informação</strong> na <strong>Fatec Barueri</strong>. Estou focado em desenvolver soluções tecnológicas inovadoras e funcionais.",
+          aboutLearning:
+            "Busco constantemente aprender mais sobre desenvolvimento web e banco de dados.",
+          aboutProject:
+            "Atualmente, estou trabalhando no projeto <strong>Crowd Gym</strong>, um sistema completo para gerenciamento de academias, incluindo matrícula de alunos e monitoramento de fluxo de pessoas.",
+          aboutHobbies:
+            "Além de tecnologia, sou apaixonado por praticar musculação, ouvir música e caminhar ao ar livre.",
+          aboutCv:
+            "Para mais detalhes sobre minha trajetória e experiência profissional, você pode baixar meu currículo.",
+          button: "us English",
+        },
+        en: {
+          aboutTitle: "About Me",
+          aboutIntro:
+            "Hello! My name is <strong>Leonardo Zanata</strong> and I am a student of <strong>Information Technology Management</strong> at <strong>Fatec Barueri</strong>. I am focused on developing innovative and functional technological solutions.",
+          aboutLearning:
+            "I am constantly learning more about web development and databases.",
+          aboutProject:
+            "Currently, I am working on the <strong>Crowd Gym</strong> project, a complete system for managing gyms, including student enrollment and monitoring people flow.",
+          aboutHobbies:
+            "Besides technology, I am passionate about weight training, listening to music, and walking outdoors.",
+          aboutCv:
+            "For more details about my career and professional experience, you can download my resume.",
+          button: "🇧🇷 Português",
+        },
+      };
+
+      let currentLang = localStorage.getItem("language") || "pt"; // Pega o idioma salvo
+
+      function translatePage() {
+        document.getElementById("about-title").textContent =
+          texts[currentLang].aboutTitle;
+        document.getElementById("about-intro").innerHTML =
+          texts[currentLang].aboutIntro;
+        document.getElementById("about-learning").textContent =
+          texts[currentLang].aboutLearning;
+        document.getElementById("about-project").innerHTML =
+          texts[currentLang].aboutProject;
+        document.getElementById("about-hobbies").textContent =
+          texts[currentLang].aboutHobbies;
+        document.getElementById("about-cv").textContent =
+          texts[currentLang].aboutCv;
+        document.getElementById("languageToggle").textContent =
+          texts[currentLang].button;
+      }
+
+      document
+        .getElementById("languageToggle")
+        .addEventListener("click", function () {
+          currentLang = currentLang === "pt" ? "en" : "pt";
+          localStorage.setItem("language", currentLang);
+          translatePage();
+          renderMenu(); // Atualiza o menu para refletir a mudança de idioma
+          renderFooter(); // Atualiza o footer dinamicamente
+        });
+
+      translatePage(); // Aplica a tradução ao carregar a página
+    </script>
   </body>
 </html>

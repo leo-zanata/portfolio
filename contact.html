@@ -20,21 +20,24 @@
       <div id="menu"></div>
       <script src="js/partials/menu.js"></script>
 
+      <!-- Botão de troca de idioma -->
+      <button id="languageToggle"></button>
+
       <div class="content">
         <div class="content-main">
           <div class="content-media">
             <div class="content-header">
-              <h1>Meu Contato</h1>
+              <h1 id="contactHeader">Meu Contato</h1>
             </div>
             <div class="content-text">
-              <p>
+              <p id="contactText">
                 Entre em contato para colaborar em projetos ou discutir
                 oportunidades. Estou disponível para uma conversa!
               </p>
             </div>
             <div class="content-media-main">
               <div class="content-media-header">
-                <h1>Minhas Redes Sociais</h1>
+                <h1 id="socialMediaHeader">Minhas Redes Sociais</h1>
               </div>
               <div class="content-redes">
                 <a
@@ -72,16 +75,16 @@
           </div>
           <div class="content-contact">
             <div class="content-subheader">
-              <h1>Você pode enviar um e-mail.</h1>
+              <h1 id="emailHeader">Você pode enviar um e-mail.</h1>
             </div>
             <div class="content-text">
-              <p>
+              <p id="emailText">
                 Deixe sua mensagem; será um prazer recebê-la e conversar com
                 você!
               </p>
             </div>
             <form id="contact-form">
-              <label for="nome">Nome</label>
+              <label for="nome" id="nomeLabel">Nome</label>
               <input
                 type="text"
                 id="nome"
@@ -90,7 +93,7 @@
                 required
               />
 
-              <label for="email">E-mail</label>
+              <label for="email" id="emailLabel">E-mail</label>
               <input
                 type="email"
                 id="email"
@@ -99,7 +102,7 @@
                 required
               />
 
-              <label for="mensagem">Mensagem</label>
+              <label for="mensagem" id="mensagemLabel">Mensagem</label>
               <textarea
                 id="mensagem"
                 name="mensagem"
@@ -108,7 +111,7 @@
                 required
               ></textarea>
 
-              <button type="submit">Enviar</button>
+              <button type="submit" id="submitButton">Enviar</button>
               <span
                 id="status-message"
                 style="display: none; margin-left: 10px"
@@ -118,6 +121,7 @@
         </div>
       </div>
     </main>
+
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="js/funcoes/email.js"></script>
     <script>
@@ -131,9 +135,9 @@
 
           // Alterar o estado do botão e mostrar mensagem de carregamento
           button.disabled = true;
-          button.textContent = "Enviando...";
+          button.textContent = texts[currentLang].sending; // Alterado para tradução
           statusMessage.style.display = "inline";
-          statusMessage.textContent = "Por favor, aguarde...";
+          statusMessage.textContent = texts[currentLang].pleaseWait; // Alterado para tradução
 
           enviarEmail(this)
             .then((message) => {
@@ -151,11 +155,89 @@
               button.textContent = "Enviar";
             });
         });
+
+      const texts = {
+        pt: {
+          contactHeader: "Meu Contato",
+          contactText:
+            "Entre em contato para colaborar em projetos ou discutir oportunidades. Estou disponível para uma conversa!",
+          socialMediaHeader: "Minhas Redes Sociais",
+          emailHeader: "Você pode enviar um e-mail.",
+          emailText:
+            "Deixe sua mensagem; será um prazer recebê-la e conversar com você!",
+          nomeLabel: "Nome",
+          emailLabel: "E-mail",
+          mensagemLabel: "Mensagem",
+          button: "us English",
+          submitButton: "Enviar",
+          nomePlaceholder: "Digite seu nome",
+          emailPlaceholder: "Digite seu e-mail",
+          mensagemPlaceholder: "Vamos conversar?",
+          sending: "Enviando...", 
+          pleaseWait: "Por favor, aguarde...",  
+        },
+        en: {
+          contactHeader: "My Contact",
+          contactText:
+            "Get in touch to collaborate on projects or discuss opportunities. I'm available for a chat!",
+          socialMediaHeader: "My Social Media",
+          emailHeader: "You can send an email.",
+          emailText: "Leave your message; I will be happy to chat with you!",
+          nomeLabel: "Name",
+          emailLabel: "Email",
+          mensagemLabel: "Message",
+          button: "🇧🇷 Português",
+          submitButton: "Send",
+          nomePlaceholder: "Enter your name",
+          emailPlaceholder: "Enter your email",
+          mensagemPlaceholder: "Let's chat?",
+          sending: "Sending...", 
+          pleaseWait: "Please, wait...", 
+        },
+      };
+
+      let currentLang = localStorage.getItem("language") || "pt"; // Usa o idioma salvo ou padrão
+
+      function translatePage() {
+        document.getElementById("contactHeader").textContent =
+          texts[currentLang].contactHeader;
+        document.getElementById("contactText").textContent =
+          texts[currentLang].contactText;
+        document.getElementById("socialMediaHeader").textContent =
+          texts[currentLang].socialMediaHeader;
+        document.getElementById("emailHeader").textContent =
+          texts[currentLang].emailHeader;
+        document.getElementById("emailText").textContent =
+          texts[currentLang].emailText;
+        document.getElementById("nomeLabel").textContent =
+          texts[currentLang].nomeLabel;
+        document.getElementById("emailLabel").textContent =
+          texts[currentLang].emailLabel;
+        document.getElementById("mensagemLabel").textContent =
+          texts[currentLang].mensagemLabel;
+        document.getElementById("languageToggle").textContent =
+          texts[currentLang].button;
+        document.getElementById("submitButton").textContent =
+          texts[currentLang].submitButton;
+        document.getElementById("nome").placeholder =
+          texts[currentLang].nomePlaceholder;
+        document.getElementById("email").placeholder =
+          texts[currentLang].emailPlaceholder;
+        document.getElementById("mensagem").placeholder =
+          texts[currentLang].mensagemPlaceholder;
+      }
+
+      document
+        .getElementById("languageToggle")
+        .addEventListener("click", function () {
+          currentLang = currentLang === "pt" ? "en" : "pt";
+          localStorage.setItem("language", currentLang);
+          translatePage();
+          renderMenu(); // Chama a função do menu para atualizar
+        });
+
+      translatePage(); // Tradução ao carregar a página
     </script>
-    <footer>
-      <div id="footer_copyright">
-        &copy; 2024-2025 PORTFÓLIO DE LEONARDO ZANATA
-      </div>
-    </footer>
+    <script src="js/partials/footer.js"></script>
   </body>
 </html>

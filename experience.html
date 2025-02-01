@@ -20,30 +20,36 @@
       <div id="menu"></div>
       <script src="js/partials/menu.js"></script>
 
+      <!-- Botão de troca de idioma -->
+      <button id="languageToggle"></button>
+
       <div class="content">
         <div class="content-main">
           <div class="content-header">
-            <h1>Minhas Experiências</h1>
+            <h1 id="name">Minhas Experiências</h1>
           </div>
           <div class="content-text">
-            <p>Explore meus projetos práticos e minha trajetória acadêmica.</p>
+            <p id="student">Confira os meus projetos práticos e minha trajetória acadêmica.</p>
           </div>
-          <!-- Abas -->
+
+          <!-- Abas de Experiências -->
           <div class="tabs">
             <button class="tab-button active" onclick="openTab('projetos')">
-              Projetos
+              <span id="projetosTitle">Projetos</span>
             </button>
             <button class="tab-button" onclick="openTab('academica')">
-              Acadêmicas
+              <span id="academicaTitle">Acadêmicas</span>
             </button>
           </div>
+
           <div class="content-experiences">
+            <!-- Conteúdo da aba "Projetos" -->
             <div id="projetos" class="tab-content active">
               <div class="experiencia">
-                <h3>Crowd Gym</h3>
-                <h4>Desenvolvedor Full Stack</h4>
-                <p><strong>Período:</strong> Jan 2024 - Atual</p>
-                <p>
+                <h3 id="crowdGymTitle">Crowd Gym</h3>
+                <h4 id="crowdGymRole">Desenvolvedor Full Stack</h4>
+                <p><strong id="periodCrowdGym">Período:</strong> Jan 2024 - Atual</p>
+                <p id="crowdGymDesc">
                   Sistema de gerenciamento de academias com funcionalidades para
                   monitoramento de fluxo de alunos, controle financeiro e
                   gerenciamento de planos.
@@ -51,31 +57,32 @@
               </div>
 
               <div class="experiencia">
-                <h3>CW Cursos</h3>
-                <h4>Desenvolvedor Full Stack</h4>
-                <p><strong>Período:</strong> Ago 2024 - Atual</p>
-                <p>
+                <h3 id="cwCursosTitle">CW Cursos</h3>
+                <h4 id="cwCursosRole">Desenvolvedor Full Stack</h4>
+                <p><strong id="periodCWCursos">Período:</strong> Ago 2024 - Atual</p>
+                <p id="cwCursosDesc">
                   Plataforma de cursos online focada em Marketing Digital, com
                   acessibilidade para pessoas com deficiência auditiva.
                 </p>
               </div>
             </div>
 
+            <!-- Conteúdo da aba "Acadêmicas" -->
             <div id="academica" class="tab-content">
               <div class="experiencia">
-                <h3>Fatec Barueri</h3>
-                <h4>Tecnólogo em Gestão da Tecnologia da Informação</h4>
-                <p><strong>Período:</strong> Jan 2023 - Dez 2025</p>
-                <p>
+                <h3 id="fatecTitle">Fatec Barueri</h3>
+                <h4 id="fatecRole">Tecnólogo em Gestão da Tecnologia da Informação</h4>
+                <p><strong id="periodFatec">Período:</strong> Jan 2023 - Dez 2025</p>
+                <p id="fatecDesc">
                   O curso de Gestão da Tecnologia da Informação forma profissionais para administrar recursos de TI em empresas, gerenciando infraestrutura, sistemas e equipes.
                 </p>
               </div>
 
               <div class="experiencia">
-                <h3>OneBitCode</h3>
-                <h4>Full Stack Javascript</h4>
-                <p><strong>Período:</strong> Jan 2024 - Atual</p>
-                <p>
+                <h3 id="oneBitCodeTitle">OneBitCode</h3>
+                <h4 id="oneBitCodeRole">Full Stack Javascript</h4>
+                <p><strong id="periodOneBitCode">Período:</strong> Jan 2024 - Atual</p>
+                <p id="oneBitCodeDesc">
                   O curso de Full Stack JavaScript abrange desde os conceitos iniciais até os mais avançados da linguagem e seu ecossistema, proporcionando ao aluno um conhecimento completo tanto no desenvolvimento de frontend quanto de backend ao final do curso.
                 </p>
               </div>
@@ -85,11 +92,133 @@
       </div>
     </main>
 
-    <footer>
-      <div id="footer_copyright">
-        &copy; 2024-2025 PORTFÓLIO DE LEONARDO ZANATA
-      </div>
-    </footer>
+    <div id="footer"></div>
+    <script src="js/partials/footer.js"></script>
     <script src="js/funcoes/experience.js"></script>
+
+    <!-- Script para troca de idioma -->
+    <script>
+      const texts = {
+        pt: {
+          name: "Minhas Experiências",
+          student: "Confira os meus projetos práticos e minha trajetória acadêmica.",
+          button: "us English",
+          projetosTitle: "Projetos",
+          academicaTitle: "Acadêmicas",
+          crowdGymTitle: "Crowd Gym",
+          crowdGymRole: "Desenvolvedor Full Stack",
+          periodCrowdGym: "Período:",
+          crowdGymDesc:
+            "Sistema de gerenciamento de academias com funcionalidades para monitoramento de fluxo de alunos, controle financeiro e gerenciamento de planos.",
+          cwCursosTitle: "CW Cursos",
+          cwCursosRole: "Desenvolvedor Full Stack",
+          periodCWCursos: "Período:",
+          cwCursosDesc:
+            "Plataforma de cursos online focada em Marketing Digital, com acessibilidade para pessoas com deficiência auditiva.",
+          fatecTitle: "Fatec Barueri",
+          fatecRole: "Tecnólogo em Gestão da Tecnologia da Informação",
+          periodFatec: "Período:",
+          fatecDesc:
+            "O curso de Gestão da Tecnologia da Informação forma profissionais para administrar recursos de TI em empresas, gerenciando infraestrutura, sistemas e equipes.",
+          oneBitCodeTitle: "OneBitCode",
+          oneBitCodeRole: "Full Stack Javascript",
+          periodOneBitCode: "Período:",
+          oneBitCodeDesc:
+            "O curso de Full Stack JavaScript abrange desde os conceitos iniciais até os mais avançados da linguagem e seu ecossistema, proporcionando ao aluno um conhecimento completo tanto no desenvolvimento de frontend quanto de backend ao final do curso.",
+        },
+        en: {
+          name: "My Experiences",
+          student: "Check out my practical projects and academic journey.",
+          button: "🇧🇷 Português",
+          projetosTitle: "Projects",
+          academicaTitle: "Academics",
+          crowdGymTitle: "Crowd Gym",
+          crowdGymRole: "Full Stack Developer",
+          periodCrowdGym: "Period:",
+          crowdGymDesc:
+            "Gym management system with features for monitoring student flow, financial control, and plan management.",
+          cwCursosTitle: "CW Cursos",
+          cwCursosRole: "Full Stack Developer",
+          periodCWCursos: "Period:",
+          cwCursosDesc:
+            "Online course platform focused on Digital Marketing, with accessibility for people with hearing impairments.",
+          fatecTitle: "Fatec Barueri",
+          fatecRole: "Information Technology Management Technologist",
+          periodFatec: "Period:",
+          fatecDesc:
+            "The Information Technology Management course trains professionals to manage IT resources in companies, overseeing infrastructure, systems, and teams.",
+          oneBitCodeTitle: "OneBitCode",
+          oneBitCodeRole: "Full Stack Javascript",
+          periodOneBitCode: "Period:",
+          oneBitCodeDesc:
+            "The Full Stack JavaScript course covers from the basics to advanced concepts of the language and its ecosystem, providing the student with complete knowledge in both frontend and backend development by the end of the course.",
+        },
+      };
+
+      let currentLang = localStorage.getItem("language") || "pt"; // Usa o idioma salvo ou padrão
+
+      function translatePage() {
+        document.getElementById("name").textContent = texts[currentLang].name;
+        document.getElementById("student").textContent =
+          texts[currentLang].student;
+        document.getElementById("languageToggle").textContent =
+          texts[currentLang].button;
+        document.getElementById("projetosTitle").textContent =
+          texts[currentLang].projetosTitle;
+        document.getElementById("academicaTitle").textContent =
+          texts[currentLang].academicaTitle;
+
+        // Projetos
+        document.getElementById("crowdGymTitle").textContent =
+          texts[currentLang].crowdGymTitle;
+        document.getElementById("crowdGymRole").textContent =
+          texts[currentLang].crowdGymRole;
+        document.getElementById("periodCrowdGym").textContent =
+          texts[currentLang].periodCrowdGym;
+        document.getElementById("crowdGymDesc").textContent =
+          texts[currentLang].crowdGymDesc;
+
+        document.getElementById("cwCursosTitle").textContent =
+          texts[currentLang].cwCursosTitle;
+        document.getElementById("cwCursosRole").textContent =
+          texts[currentLang].cwCursosRole;
+        document.getElementById("periodCWCursos").textContent =
+          texts[currentLang].periodCWCursos;
+        document.getElementById("cwCursosDesc").textContent =
+          texts[currentLang].cwCursosDesc;
+
+        // Acadêmicas
+        document.getElementById("fatecTitle").textContent =
+          texts[currentLang].fatecTitle;
+        document.getElementById("fatecRole").textContent =
+          texts[currentLang].fatecRole;
+        document.getElementById("periodFatec").textContent =
+          texts[currentLang].periodFatec;
+        document.getElementById("fatecDesc").textContent =
+          texts[currentLang].fatecDesc;
+
+        document.getElementById("oneBitCodeTitle").textContent =
+          texts[currentLang].oneBitCodeTitle;
+        document.getElementById("oneBitCodeRole").textContent =
+          texts[currentLang].oneBitCodeRole;
+        document.getElementById("periodOneBitCode").textContent =
+          texts[currentLang].periodOneBitCode;
+        document.getElementById("oneBitCodeDesc").textContent =
+          texts[currentLang].oneBitCodeDesc;
+      }
+
+      // Função para alternar o idioma
+      function toggleLanguage() {
+        currentLang = currentLang === "pt" ? "en" : "pt";
+        localStorage.setItem("language", currentLang);
+        translatePage();
+      }
+
+      document
+        .getElementById("languageToggle")
+        .addEventListener("click", toggleLanguage);
+
+      translatePage(); // Traduz ao carregar a página
+    </script>
   </body>
 </html>
