@@ -315,8 +315,8 @@
     .content-image img{   
       left: 30rem;
       top: 29rem;
-      width: 281px;
-      height: 391px;
+      width: 251px;
+      height: 341px;
     }
 
     .content-link{
@@ -521,7 +521,7 @@
     
     .content-image img{   
       left: 10rem;
-      top: 36rem;
+      top: 35rem;
       width: 261px;
       height: 351px;
     }
@@ -543,27 +543,6 @@
 
   @media (max-width: 550px) { 
     .content-header h1{
-      margin-left: 2rem;
-      font-size: 30px;
-    }
-    
-    .content-text p{
-      margin-top: 0rem;
-      margin-left: 2rem;
-      font-size: 18px;
-      width: 30rem;
-    }
-    
-    .content-image img{   
-      left: 8rem;
-      top: 36rem;
-      width: 261px;
-      height: 351px;
-    }
-  }
-
-  @media (max-width: 550px) { 
-    .content-header h1{
       margin-left: 4rem;
       font-size: 30px;
     }
@@ -577,7 +556,7 @@
     
     .content-image img{   
       left: 8rem;
-      top: 36rem;
+      top: 34rem;
       width: 251px;
       height: 351px;
     }
@@ -669,8 +648,8 @@
     .content-image img{   
       left: 6rem;
       top: 36rem;
-      width: 231px;
-      height: 321px;
+      width: 221px;
+      height: 311px;
     }
 
     .content-link{
@@ -695,7 +674,7 @@
     
     .content-image img{   
       left: 5rem;
-      top: 36rem;
+      top: 35rem;
       width: 231px;
       height: 321px;
     }
@@ -723,8 +702,8 @@
     .content-image img{   
       left: 5rem;
       top: 39rem;
-      width: 231px;
-      height: 321px;
+      width: 211px;
+      height: 291px;
     }
 
     .content-link{
@@ -746,13 +725,6 @@
       font-size: 17px;
       width: 19rem;
     }
-    
-    .content-image img{   
-      left: 4rem;
-      top: 39rem;
-      width: 231px;
-      height: 321px;
-    }
   }
 
   @media (max-width: 340px) { 
@@ -769,9 +741,6 @@
     
     .content-image img{   
       left: 3rem;
-      top: 39rem;
-      width: 231px;
-      height: 321px;
     }
 
     .content-link{
@@ -796,12 +765,10 @@
     .content-image img{   
       left: 3rem;
       top: 42rem;
-      width: 231px;
-      height: 321px;
     }
 
     .content-link{
-      margin-top: 21rem;
+      margin-top: 20rem;
       margin-left: 0rem;
       width: 17rem;
     }
