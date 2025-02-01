@@ -404,7 +404,7 @@
 @media (max-width: 1920px) {  
   .content-main{
       margin-left: 25rem;
-      margin-top: 70px;
+      margin-top: 3rem;
       width: 1000px;
     }
 
@@ -491,7 +491,7 @@
 @media (max-width: 1366px) {  
   .content-main{
       margin-left: 25rem;
-      margin-top: 70px;
+      margin-top: 3rem;
       width: 800px;
     }
 

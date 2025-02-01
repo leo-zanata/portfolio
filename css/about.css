@@ -230,7 +230,7 @@
   @media (max-width: 1920px) { 
     .content-header h1{
       margin-left: 32rem;
-      margin-top: 9rem;
+      margin-top: 6rem;
       margin-bottom: 3rem;
       font-size: 65px;
     }
@@ -268,7 +268,7 @@
   @media (max-width: 1366px) { 
     .content-header h1{
       margin-left: 25rem;
-      margin-top: 7rem;
+      margin-top: 5rem;
       font-size: 40px;
     }
     
@@ -302,7 +302,6 @@
   @media (max-width: 1200px) { 
     .content-header h1{
       margin-left: 23rem;
-      margin-top: 7rem;
       font-size: 40px;
     }
     
@@ -336,7 +335,6 @@
   @media (max-width: 1120px) { 
     .content-header h1{
       margin-left: 15rem;
-      margin-top: 7rem;
       font-size: 40px;
     }
     
@@ -362,7 +360,7 @@
   @media (max-width: 1000px) { 
     .content-header h1{
       margin-left: 10rem;
-      margin-top: 12rem;
+      margin-top: 11rem;
       margin-bottom: 2rem;
       font-size: 40px;
     }
@@ -383,7 +381,7 @@
   @media (max-width: 880px) { 
     .content-header h1{
       margin-left: 5rem;
-      margin-top: 13rem;
+      margin-top: 12rem;
       font-size: 40px;
     }
     
@@ -403,7 +401,6 @@
   @media (max-width: 800px) { 
     .content-header h1{
       margin-left: 3rem;
-      margin-top: 13rem;
       font-size: 40px;
     }
     
@@ -423,7 +420,6 @@
   @media (max-width: 770px) { 
     .content-header h1{
       margin-left: 4rem;
-      margin-top: 13rem;
       font-size: 40px;
     }
     
@@ -449,7 +445,6 @@
   @media (max-width: 710px) { 
     .content-header h1{
       margin-left: 3rem;
-      margin-top: 13rem;
       font-size: 40px;
     }
     
@@ -469,7 +464,6 @@
   @media (max-width: 690px) { 
     .content-header h1{
       margin-left: 3rem;
-      margin-top: 13rem;
       font-size: 40px;
     }
     
@@ -495,7 +489,6 @@
   @media (max-width: 620px) { 
     .content-header h1{
       margin-left: 2rem;
-      margin-top: 13rem;
       font-size: 40px;
     }
     
@@ -515,7 +508,7 @@
   @media (max-width: 590px) { 
     .content-header h1{
       margin-left: 4rem;
-      margin-top: 13rem;
+      margin-top: 11rem;
       font-size: 30px;
     }
     
@@ -551,7 +544,6 @@
   @media (max-width: 550px) { 
     .content-header h1{
       margin-left: 2rem;
-      margin-top: 13rem;
       font-size: 30px;
     }
     
@@ -573,7 +565,6 @@
   @media (max-width: 550px) { 
     .content-header h1{
       margin-left: 4rem;
-      margin-top: 13rem;
       font-size: 30px;
     }
     
@@ -601,7 +592,7 @@
   @media (max-width: 500px) { 
     .content-header h1{
       margin-left: 4rem;
-      margin-top: 10rem;
+      margin-top: 9rem;
       font-size: 30px;
     }
      
@@ -617,7 +608,6 @@
   @media (max-width: 460px) { 
     .content-header h1{
       margin-left: 2rem;
-      margin-top: 10rem;
       font-size: 30px;
     }
     
@@ -645,7 +635,6 @@
   @media (max-width: 435px) { 
     .content-header h1{
       margin-left: 1rem;
-      margin-top: 10rem;
       font-size: 30px;
     }
     
@@ -667,7 +656,6 @@
   @media (max-width: 425px) { 
     .content-header h1{
       margin-left: 3rem;
-      margin-top: 10rem;
       font-size: 30px;
     }
     
@@ -695,7 +683,6 @@
   @media (max-width: 400px) { 
     .content-header h1{
       margin-left: 2rem;
-      margin-top: 10rem;
       font-size: 30px;
     }
     
@@ -723,7 +710,6 @@
   @media (max-width: 390px) { 
     .content-header h1{
       margin-left: 3rem;
-      margin-top: 10rem;
       font-size: 30px;
     }
     
@@ -751,7 +737,6 @@
   @media (max-width: 350px) { 
     .content-header h1{
       margin-left: 2rem;
-      margin-top: 10rem;
       font-size: 30px;
     }
     
@@ -773,7 +758,6 @@
   @media (max-width: 340px) { 
     .content-header h1{
       margin-left: 1rem;
-      margin-top: 10rem;
       font-size: 30px;
     }
     
@@ -800,7 +784,6 @@
   @media (max-width: 320px) { 
     .content-header h1{
       margin-left: 1.5rem;
-      margin-top: 10rem;
       font-size: 30px;
     }
     

@@ -256,7 +256,7 @@
 @media (max-width: 1920px) { 
     .content-header h1{
         font-size: 65px;
-        margin-top: 7rem; 
+        margin-top: 6rem; 
     }
       
     .content-image img{   
@@ -318,7 +318,7 @@
   @media (max-width: 1366px) { 
     .content-header h1{
         font-size: 40px;
-        margin-top: 6rem;  
+        margin-top: 5rem;  
         margin-left: 0rem;      
     }
       

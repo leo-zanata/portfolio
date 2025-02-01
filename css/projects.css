@@ -242,7 +242,7 @@
   .content-header h1{
       font-size: 60px;
       margin-left: 35rem;
-      margin-top: 8rem;
+      margin-top: 6rem;
       margin-bottom: 5rem;
   }
 
@@ -295,7 +295,6 @@
   .content-header h1{
       font-size: 60px;
       margin-left: 35rem;
-      margin-top: 8rem;
       margin-bottom: 5rem;
   }
 
@@ -326,13 +325,17 @@
   .content-header h1{
       margin-left: 30rem;
   }
+
+  .project-container{
+    margin-left: 30rem;
+  }
 }
 
 @media (max-width: 1366px) { 
   .content-header h1{
       font-size: 40px;
       margin-left: 25rem;
-      margin-top: 8rem;
+      margin-top: 6rem;
       margin-bottom: 3rem;
   }
 
