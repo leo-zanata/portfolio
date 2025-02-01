@@ -20,15 +20,18 @@
       <div id="menu"></div>
       <script src="js/partials/menu.js"></script>
 
+      <!-- Botão de troca de idioma -->
+      <button id="languageToggle"></button>
+
       <div class="content">
         <div class="content-main">
           <div class="content-header">
-            <h1>Leonardo Zanata</h1>
-            <p>Barueri - São Paulo</p>
+            <h1 id="name">Leonardo Zanata</h1>
+            <p id="location">Barueri - São Paulo</p>
           </div>
           <div class="content-text">
-            <p>Estudante de Gestão da Tecnologia da Informação.</p>
-            <p>Atualmente focado no desenvolvimento de projetos de TI.</p>
+            <p id="student">Estudante de Gestão da Tecnologia da Informação.</p>
+            <p id="focus">Atualmente focado no desenvolvimento de projetos de TI.</p>
           </div>
           <div class="content-redes">
             <a
@@ -64,7 +67,7 @@
           </div>
 
           <div class="content-link">
-            <p>Venha conhecer mais sobre mim e meus projetos.</p>
+            <p id="more">Venha conhecer mais sobre mim e meus projetos.</p>
             <a href="projects.html"
               ><div class="link-content">
                 <i class="bi bi-arrow-down-circle"></i></div
@@ -87,5 +90,48 @@
         &copy; 2024-2025 PORTFÓLIO DE LEONARDO ZANATA
       </div>
     </footer>
+
+    <!-- Script para troca de idioma -->
+    <script>
+      const texts = {
+        "pt": {
+          "name": "Leonardo Zanata",
+          "location": "Barueri - São Paulo",
+          "student": "Estudante de Gestão da Tecnologia da Informação.",
+          "focus": "Atualmente focado no desenvolvimento de projetos de TI.",
+          "more": "Venha conhecer mais sobre mim e meus projetos.",
+          "button": "us English"
+        },
+        "en": {
+          "name": "Leonardo Zanata",
+          "location": "Barueri - São Paulo",
+          "student": "Information Technology Management Student.",
+          "focus": "Currently focused on IT project development.",
+          "more": "Come and learn more about me and my projects.",
+          "button": "🇧🇷 Português"
+        }
+      };
+    
+      let currentLang = localStorage.getItem("language") || "pt"; // Usa o idioma salvo ou padrão
+    
+      function translatePage() {
+        document.getElementById("name").textContent = texts[currentLang].name;
+        document.getElementById("location").textContent = texts[currentLang].location;
+        document.getElementById("student").textContent = texts[currentLang].student;
+        document.getElementById("focus").textContent = texts[currentLang].focus;
+        document.getElementById("more").textContent = texts[currentLang].more;
+        document.getElementById("languageToggle").textContent = texts[currentLang].button;
+      }
+    
+      document.getElementById("languageToggle").addEventListener("click", function () {
+        currentLang = currentLang === "pt" ? "en" : "pt";
+        localStorage.setItem("language", currentLang);
+        translatePage();
+        renderMenu(); // Chama a função do menu para atualizar
+      });
+    
+      translatePage(); // Tradução ao carregar a página
+    </script>
+    
   </body>
 </html>
