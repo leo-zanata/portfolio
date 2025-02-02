@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="container-main" id="menuContent">
           <div class="main-container">
             <div class="main-content">
-              <a href="home.html"> <i class="bi bi-house"></i> ${translations[currentLang].home} </a>
+              <a href="index.html"> <i class="bi bi-house"></i> ${translations[currentLang].home} </a>
             </div>
           </div>
 
