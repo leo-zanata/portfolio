@@ -55,15 +55,16 @@
 
             <div class="tab-content" id="ferramentas">
               <ul>
-                <li><img src="img/abilities/pacote-office.webp" alt="" />Pacote Office</li>
+                <li><img src="img/abilities/pacote-office.webp" alt="" id="office" />Pacote Office</li>
                 <li><img src="img/abilities/Git.png" alt="" />Git</li>
                 <li><img src="img/abilities/github.png" alt="" />GitHub</li>
                 <li><img src="img/abilities/Mysql.png" alt="" />MySQL</li>
+                <li><img src="img/abilities/PowerBI.png" alt="" />Power BI</li>
                 <li><img src="img/abilities/TCPIP.jpeg" alt="" />TCP/IP</li>
-                <li><img src="img/abilities/img-redes.png" alt="" />Configuração de Redes</li>
-                <li><img src="img/abilities/windows_linux.png" alt="" />Servidores Linux/Windows</li>
-                <li><img src="img/abilities/VM.png" alt="" />Virtualização (VMware, VirtualBox)</li>
-                <li><img src="img/abilities/Segurancaderede.png" alt="" />Segurança de Redes</li>
+                <li><img src="img/abilities/img-redes.png" alt="" id="netw" />Configuração de Redes</li>
+                <li><img src="img/abilities/windows_linux.png" alt="" id="so" />Servidores Linux/Windows</li>
+                <li><img src="img/abilities/VM.png" alt="" id="vm" />Virtualização (VMware, VirtualBox)</li>
+                <li><img src="img/abilities/Segurancaderede.png" alt="" id="sec" />Segurança de Redes</li>
                 <li><img src="img/abilities/PhpMyAdmin.png" alt="" />phpMyAdmin</li>
                 <li><img src="img/abilities/figma.png" alt="" />Figma</li>
                 <li><img src="img/abilities/VScode.png" alt="" />Visual Studio Code</li>
@@ -98,6 +99,11 @@
           tabTools: "Ferramentas",
           tabSoft: "Interpessoais",
           uml: "Modelagem de Casos de Uso UML",
+          office: "Pacote Office",
+          netw: "Configuração de Redes",
+          so: "Servidores Linux/Windows",
+          vm: "Virtualização (VMware, VirtualBox)",
+          sec: "Segurança de Redes",
           com: "Comunicação eficaz",
           team: "Trabalho em equipe",
           lead: "Liderança de equipe",
@@ -111,6 +117,11 @@
           tabTools: "Tools",
           tabSoft: "Interpersonal",
           uml: "UML Use Case Modeling",
+          office: "Microsoft Office",
+          netw: "Network Configuration",
+          so: "Linux/Windows Servers",
+          vm: "Virtualization (VMware, VirtualBox)",
+          sec: "Network Security",
           com: "Effective Communication",
           team: "Teamwork",
           lead: "Team Leadership",
@@ -128,6 +139,11 @@
         document.getElementById("tab-tools").textContent = texts[currentLang].tabTools;
         document.getElementById("tab-soft").textContent = texts[currentLang].tabSoft;
         document.getElementById("uml").nextSibling.textContent = texts[currentLang].uml;
+        document.getElementById("office").nextSibling.textContent = texts[currentLang].office;
+        document.getElementById("netw").nextSibling.textContent = texts[currentLang].netw;
+        document.getElementById("so").nextSibling.textContent = texts[currentLang].so;
+        document.getElementById("vm").nextSibling.textContent = texts[currentLang].vm;
+        document.getElementById("sec").nextSibling.textContent = texts[currentLang].sec;
         document.getElementById("com").nextSibling.textContent = texts[currentLang].com;
         document.getElementById("team").nextSibling.textContent = texts[currentLang].team;
         document.getElementById("lead").nextSibling.textContent = texts[currentLang].lead;
